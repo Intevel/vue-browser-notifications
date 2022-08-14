@@ -1,8 +1,8 @@
 {
-  "name": "vue-composable-template",
+  "name": "vue-browser-notifications",
   "version": "1.0.0",
   "description": "A simple and minimalistic setup for creating Vue 3 composables.",
-  "repository": "Intevel/vue-composable-template",
+  "repository": "Intevel/vue-browser-notifications",
   "author": "Conner Bachmann <github@conner-bachmann.de>",
   "license": "MIT",
   "sideEffects": false,

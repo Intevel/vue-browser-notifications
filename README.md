@@ -1,4 +1,4 @@
-# 📦 vue-composable-template
+# 📦 vue-browser-notifications
 
 A simple and minimalistic setup for creating Vue 3 composables.
 
