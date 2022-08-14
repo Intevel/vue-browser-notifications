@@ -1,0 +1,43 @@
+{
+  "name": "vue-composable-template",
+  "version": "1.0.0",
+  "description": "A simple and minimalistic setup for creating Vue 3 composables.",
+  "repository": "Intevel/vue-composable-template",
+  "author": "Conner Bachmann <github@conner-bachmann.de>",
+  "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "vite playground",
+    "lint": "eslint --ext .ts,.js,.mjs,.cjs .",
+    "prepack": "unbuild",
+    "release": "yarn test && standard-version && git push --follow-tags && pnpm publish",
+    "test": "yarn lint && vitest run"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@nuxtjs/eslint-config-typescript": "latest",
+    "@vitejs/plugin-vue": "^3.0.3",
+    "c8": "latest",
+    "eslint": "latest",
+    "standard-version": "latest",
+    "typescript": "latest",
+    "unbuild": "latest",
+    "vite": "^3.0.7",
+    "vitest": "latest",
+    "vue": "^3.2.37"
+  }
+}
