@@ -1,6 +1,6 @@
 {
   "name": "vue-browser-notifications",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A simple and minimalistic setup for creating Vue 3 composables.",
   "repository": "Intevel/vue-browser-notifications",
   "author": "Conner Bachmann <github@conner-bachmann.de>",
@@ -24,7 +24,7 @@
     "dev": "vite playground",
     "lint": "eslint --ext .ts,.js,.mjs,.cjs .",
     "prepack": "unbuild",
-    "release": "standard-version && git push --follow-tags && pnpm publish",
+    "release": "standard-version && git push --follow-tags && npm publish",
     "test": "yarn lint && vitest run"
   },
   "dependencies": {
