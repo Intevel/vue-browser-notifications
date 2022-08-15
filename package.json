@@ -1,6 +1,6 @@
 {
   "name": "vue-browser-notifications",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A simple and minimalistic setup for creating Vue 3 composables.",
   "repository": "Intevel/vue-browser-notifications",
   "author": "Conner Bachmann <github@conner-bachmann.de>",
