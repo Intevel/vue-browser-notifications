@@ -24,7 +24,7 @@
     "dev": "vite playground",
     "lint": "eslint --ext .ts,.js,.mjs,.cjs .",
     "prepack": "unbuild",
-    "release": "yarn test && standard-version && git push --follow-tags && pnpm publish",
+    "release": "standard-version && git push --follow-tags && pnpm publish",
     "test": "yarn lint && vitest run"
   },
   "dependencies": {
@@ -34,6 +34,7 @@
     "@nuxtjs/eslint-config-typescript": "latest",
     "@vitejs/plugin-vue": "^3.0.3",
     "c8": "latest",
+    "changelogen": "^0.1.1",
     "eslint": "latest",
     "standard-version": "latest",
     "typescript": "latest",

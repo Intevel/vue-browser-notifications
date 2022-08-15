@@ -20,11 +20,11 @@ npm install vue-browser-notifications
 useNotifications(requestOnNotify: boolean, options?: NotificationOptions)
 ```
 
-**`requestOnNotify`**:
+**`requestOnNotify`**
 - Default: `true`
 - Will request permissions everytime `sendNotification` is executed
 
-**`options`**: 
+**`options`**
 - *Optional*
 - Type: [NotificationOptions](https://github.com/Intevel/vue-browser-notifications/blob/master/src/types/index.d.ts#L1)
 - Will override options on `sendNotifications`, can be used for global Notification settings like Icons.
@@ -41,4 +41,4 @@ sendNotification('Hello World', { body: 'Hallo Welt' })
 ```
 ## 💚 License
 
-MIT License
+MIT License - Conner Luka Bachmann
