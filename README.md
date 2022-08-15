@@ -1,4 +1,4 @@
-# 📦 vue-browser-notifications
+# 💬 vue-browser-notifications
 
 Easy to use Vue 3 composable for managing browser notifications
 
