@@ -8,8 +8,8 @@
 </template>
 
 <script setup lang="ts">
-import { useTestComposable } from '../src/index'
-const { requestPermission, sendNotification } = useTestComposable(true, { icon: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'})
+import { useNotifications } from '../src/index'
+const { requestPermission, sendNotification } = useNotifications(true, { icon: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' })
 
 const testComposable = () => {
   sendNotification('Hello World', { body: 'Wie gehts' })
