@@ -1,28 +1,44 @@
 # 📦 vue-browser-notifications
 
-A simple and minimalistic setup for creating Vue 3 composables.
+Easy to use Vue 3 composable for managing browser notifications
 
-- 🧩 **TypeScript** by default
-- 🌐 [**Vue 3 & Vite**](https://vitejs.dev) as a playground
-- ✅ Testing using [**Vitest**](https://vitest.dev)
-- 🛠 Building with [**unbuild**](https://github.com/unjs/unbuild)
+- 🧩 **TypeScript** Support
+- 🌐 **Vue 3** Support
+- ✅ Send & Close Browser Notifications
 
-## 💻 Development
+## 📋 Installation
 
-The development is simple, you can find a sample composable in `./src/index.ts` where you can write your own composable, to start the playground you use `yarn dev`
+```
+yarn add vue-browser-notifications
 
-## 📋 To-Do
+npm install vue-browser-notifications
+```
 
-- [ ] Edit package.json `name`, `description`, `repository` and `author`.
-- [ ] Edit README.md.
-- [ ] Develop your composable.
+## 🔗 Options
 
-## 🗂 Build with this template
+```ts
+useNotifications(requestOnNotify: boolean, options?: NotificationOptions)
+```
 
-- [**example**](https://github.com/Intevel/)
+**`requestOnNotify`**:
+- Default: `true`
+- Will request permissions everytime `sendNotification` is executed
 
-## 💚 Credits
+**`options`**: 
+- *Optional*
+- Type: [NotificationOptions](https://github.com/Intevel/vue-browser-notifications/blob/master/src/types/index.d.ts#L1)
+- Will override options on `sendNotifications`, can be used for global Notification settings like Icons.
 
-The credits for this idea goes to [Tahul](https://github.com/tahul/)
+## 💻 Example
 
-Template built by [Intevel](https://github.com/Intevel)
+```ts
+<script setup lang="ts">
+import { useTestComposable } from '../src/index'
+const { requestPermission, sendNotification } = useTestComposable(true, { icon: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'})
+
+sendNotification('Hello World', { body: 'Hallo Welt' })
+</script>
+```
+## 💚 License
+
+MIT License
