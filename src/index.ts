@@ -1,6 +1,7 @@
+import { defu } from 'defu'
 import { NotificationOptions } from './types'
 
-export const useTestComposable = (requestOnNotify: boolean) => {
+export const useTestComposable = (requestOnNotify: boolean, composableOptions?: NotificationOptions) => {
   if (window.Notification) {
     const requestPermission = () => {
       window.Notification.requestPermission()
@@ -10,7 +11,7 @@ export const useTestComposable = (requestOnNotify: boolean) => {
       if (requestOnNotify && Notification.permission !== 'granted') {
         return requestPermission()
       }
-      const n = new Notification(title, options)
+      const n = new Notification(title, defu(options, composableOptions))
       return n
     }
 

@@ -9,9 +9,9 @@
 
 <script setup lang="ts">
 import { useTestComposable } from '../src/index'
-const { requestPermission, sendNotification } = useTestComposable(true)
+const { requestPermission, sendNotification } = useTestComposable(true, { icon: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'})
 
 const testComposable = () => {
-  sendNotification('Hello World', { body: 'Wie gehts', icon: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' })
+  sendNotification('Hello World', { body: 'Wie gehts' })
 }
 </script>

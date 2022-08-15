@@ -27,7 +27,9 @@
     "release": "yarn test && standard-version && git push --follow-tags && pnpm publish",
     "test": "yarn lint && vitest run"
   },
-  "dependencies": {},
+  "dependencies": {
+    "defu": "^6.0.0"
+  },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "latest",
     "@vitejs/plugin-vue": "^3.0.3",
