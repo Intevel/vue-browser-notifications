@@ -33,8 +33,8 @@ useNotifications(requestOnNotify: boolean, options?: NotificationOptions)
 
 ```ts
 <script setup lang="ts">
-import { useTestComposable } from '../src/index'
-const { requestPermission, sendNotification } = useTestComposable(true, { icon: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'})
+import { useNotifications } from 'vue-browser-notifications'
+const { requestPermission, sendNotification } = useNotifications(true, { icon: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'})
 
 sendNotification('Hello World', { body: 'Hallo Welt' })
 </script>
